@@ -1,0 +1,21 @@
+
+.container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  /* align-content: space-around; */
+}
+
+app-search-list-item {
+  margin: 10px;
+  max-width: 200px;
+  display: flex;
+}

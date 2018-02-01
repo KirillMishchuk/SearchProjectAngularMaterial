@@ -1,0 +1,12 @@
+
+.shell {
+  margin-bottom: 70px;
+}
+
+.footer {
+  justify-content: center;
+  position: fixed;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}

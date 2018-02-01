@@ -1,0 +1,29 @@
+.item-card {
+  display: flex;
+  flex-direction: column;
+}
+
+mat-card-title {
+  font-weight: bold;
+}
+
+mat-card-header {
+  margin: 0 -24px -20px;
+}
+
+a {
+  text-decoration: none;
+  display: block;
+  color: black;
+}
+
+.red-text {
+  color: #dd2B26;
+}
+
+mat-card-actions {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: auto;
+}

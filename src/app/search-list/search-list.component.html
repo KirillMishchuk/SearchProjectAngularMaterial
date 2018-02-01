@@ -1,0 +1,9 @@
+<div class="container">
+  <main *ngIf="list.length">
+      <app-search-list-item *ngFor="let i of list" [item]="i">
+      </app-search-list-item>
+  </main>
+  <h1 *ngIf="isEmpty">Поиск не дал результатов :(</h1>
+  <h3 *ngIf="list.length">Показано результатов: {{list.length}}</h3>
+</div>
+<!-- <a mat-button color="accent" [routerLink]="['/']" [queryParamsHandling]="preserve" [preserveFragment]="true">back</a> -->

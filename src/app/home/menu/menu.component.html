@@ -1,0 +1,44 @@
+<mat-toolbar>
+  <mat-toolbar-row>
+    <div class="nav-logo">
+      <button mat-icon-button [matMenuTriggerFor]="menu">
+        <mat-icon>more_vert</mat-icon>
+      </button>
+      <mat-menu #menu="matMenu">
+        <a mat-menu-item routerLink='/'>
+          <mat-icon>search</mat-icon>
+          <span>Search</span>
+        </a>
+        <a mat-menu-item routerLink='/results'>
+          <mat-icon>list</mat-icon>
+          <span>VideoList</span>
+        </a>
+        <a mat-menu-item routerLink='/view'>
+          <mat-icon>play_circle_filled</mat-icon>
+          <span>View</span>
+        </a>
+        <a mat-menu-item routerLink='/favourite'>
+          <mat-icon>favorite</mat-icon>
+          <span>FavouriteList</span>
+        </a>
+        <a mat-menu-item routerLink='/login'>
+          <mat-icon>account_box</mat-icon>
+          <span>LogIn</span>
+        </a>
+      </mat-menu>
+      <span>
+        <a routerLink='/'>
+          <span class="black">Видео</span><span class="red">Youtube</span>
+        </a>
+      </span>
+    </div>
+
+    <div class="nav-menu">
+      <a mat-button routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}" routerLink='/'>Search</a>
+      <a mat-button routerLinkActive="active" routerLink='/results'>VideoList</a>
+      <a mat-button routerLinkActive="active" routerLink='/view'>View</a>
+      <a mat-button routerLinkActive="active" routerLink='/favourite'>FavouriteList</a>
+      <a mat-button routerLinkActive="active" routerLink='/login'>LogIn</a>
+    </div>
+  </mat-toolbar-row>
+</mat-toolbar>

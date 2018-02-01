@@ -1,0 +1,13 @@
+<mat-card class="item-card">
+  <img mat-card-image [src]="item.thumb" alt="Photo">
+  <mat-card-header>
+    <mat-card-title><a [routerLink]="['/view']" [queryParams]="{'id': item.videoId}">{{item.title}}</a></mat-card-title>
+    <mat-card-subtitle>
+      <small>By <span class="red-text">{{item.channelTitle}}</span> on {{item.publishedAt}}</small>
+    </mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-actions>
+    <button mat-button>Add</button>
+    <button mat-button>Delete</button>
+  </mat-card-actions>
+</mat-card>

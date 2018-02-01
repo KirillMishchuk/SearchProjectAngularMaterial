@@ -1,0 +1,13 @@
+<form class="form-container" (submit)="onSubmit()">
+  <mat-form-field>
+    <input matInput type="search" name="search_query" [(ngModel)]="search_query" autofocus placeholder="Введите поисковой запрос">
+  </mat-form-field>
+
+  <mat-form-field class="max-results">
+    <mat-label>Максимальное количество результатов({{max_results ? max_results : default_max_results}})</mat-label>
+    <input matInput type="number" name="max_results" [(ngModel)]="max_results" [placeholder]="default_max_results" min="1" max="50">
+  </mat-form-field>
+  <button mat-raised-button type="submit" color="primary" [disabled]="!search_query">Поиск</button>
+
+  <mat-spinner [style.display]="showSpinner ? 'block' : 'none'"></mat-spinner>
+</form>
